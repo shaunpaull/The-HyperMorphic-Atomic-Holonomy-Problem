@@ -1,0 +1,1063 @@
+HyperMorphic Curvature-Activated Representation Locking
+
+A candidate dynamical solution to the quantum measurement problem
+
+Abstract
+
+We formulate quantum measurement as curvature-activated locking of a reversible representation law. The microscopic system, apparatus, environment, and representation register inhabit one Hilbert space. Measurement begins as ordinary unitary entanglement. Nontrivial holonomy among the interaction, amplification, and readout laws then activates a norm-preserving stochastic evolution that selects one pointer branch.
+
+The branch weights are bounded martingales. Consequently, when localization completes, the probability of selecting branch (i) equals its initial Hilbert-space weight:
+
+[
+\Pr(i)=\operatorname{Tr}(\rho E_i).
+]
+
+Thus the Born rule is obtained dynamically rather than appended as a separate collapse postulate. The ensemble evolution remains a linear completely positive master equation. The model predicts residual, curvature-dependent loss of coherence in otherwise perfectly reversed measurements.
+
+The construction is called HyperMorphic Curvature-Activated Representation Locking, or HCARL.
+
+⸻
+
+1. Full Hilbert-space formulation
+
+Let
+
+[
+\mathcal H
+
+\mathcal H_S
+\otimes
+\mathcal H_A
+\otimes
+\mathcal H_E
+\otimes
+\mathcal H_L,
+]
+
+where:
+
+[
+\mathcal H_S
+]
+
+is the measured system,
+
+[
+\mathcal H_A
+]
+
+is the apparatus,
+
+[
+\mathcal H_E
+]
+
+is the environment, and
+
+[
+\mathcal H_L
+]
+
+is a physical register encoding the active representation law.
+
+A measurement with outcomes (i=1,\ldots,m) is described by orthogonal branch projectors
+
+[
+Q_iQ_j=\delta_{ij}Q_i,
+\qquad
+\sum_iQ_i=I.
+]
+
+For an ideal measurement,
+
+[
+Q_i
+
+\Pi_i^{S}
+\otimes
+\Pi_i^{A}
+\otimes
+\Pi_i^{E}
+\otimes
+\Pi_i^{L}.
+]
+
+Ordinary premeasurement is unitary:
+
+[
+U_{\mathrm{pre}}
+\left(
+|\psi\rangle
+|A_0\rangle
+|E_0\rangle
+|L_0\rangle
+\right)
+
+\sum_i
+\Pi_i|\psi\rangle
+|A_i\rangle
+|E_i\rangle
+|L_i\rangle.
+]
+
+No collapse has yet occurred. All branches remain in the global state.
+
+⸻
+
+2. Representation laws and holonomy
+
+Let (G_a) and (G_b) be reversible laws acting on the total Hilbert space. Their switching holonomy is
+
+[
+\Omega_{ab}
+
+G_aG_bG_a^\dagger G_b^\dagger.
+]
+
+The laws are flat when
+
+[
+\Omega_{ab}=I.
+]
+
+Define their normalized curvature exposure by
+
+[
+c_{ab}
+
+\frac{1}{2d}
+\left|
+I-\Omega_{ab}
+\right|_{\mathrm{HS}}^2
+
+1-\frac{1}{d}
+\operatorname{Re}\operatorname{Tr}(\Omega_{ab}),
+]
+
+where (d) is the dimension of the relevant representation sector.
+
+Therefore,
+
+[
+c_{ab}=0
+\quad\Longleftrightarrow\quad
+\Omega_{ab}=I.
+]
+
+In the finite permutation model, an atomic holonomy is a (3)-cycle. Its permutation matrix has trace (n-3), so
+
+[
+c_{\mathrm{atomic}}
+
+1-\frac{n-3}{n}
+
+\frac{3}{n}.
+]
+
+Thus the extremal atomic-holonomy problem supplies a discrete unit of representation curvature.
+
+⸻
+
+3. Curvature-activated locking operators
+
+For each apparatus component (r), define a self-adjoint locking operator
+
+[
+A_r(t)
+
+\sum_i a_{ri}(t)Q_i,
+]
+
+with
+
+[
+a_{ri}(t)
+
+\sqrt{\lambda c_r(t)},\alpha_{ri}.
+]
+
+Here:
+
+* (\lambda\ge0) is the fundamental HyperMorphic locking rate;
+* (c_r(t)) is the law-curvature exposure;
+* (\alpha_{ri}) is the macroscopic pointer signature of outcome (i).
+
+Different outcomes must have distinguishable signatures:
+
+[
+(\alpha_{1i},\ldots,\alpha_{Ri})
+\neq
+(\alpha_{1j},\ldots,\alpha_{Rj})
+\qquad
+\text{for }i\neq j.
+]
+
+For (N) effectively independent apparatus components, the localization strength adds over (r). This creates an amplification mechanism:
+
+[
+\Gamma_{\mathrm{eff}}
+\propto
+\lambda N.
+]
+
+Microscopic systems can therefore remain coherent while macroscopic records lock rapidly.
+
+⸻
+
+4. Fundamental trajectory equation
+
+The physical state is one normalized stochastic trajectory satisfying
+
+[
+\boxed{
+\begin{aligned}
+d|\Psi_t\rangle
+={}&
+\Bigg[
+-iH_t,dt
+-\frac12
+\sum_r
+\left(
+A_r-\langle A_r\rangle_t
+\right)^2dt
+\
+&\qquad+
+\sum_r
+\left(
+A_r-\langle A_r\rangle_t
+\right)dW_r(t)
+\Bigg]
+|\Psi_t\rangle .
+\end{aligned}
+}
+]
+
+The (W_r) are independent Wiener processes and
+
+[
+\langle A_r\rangle_t
+
+\langle\Psi_t|A_r|\Psi_t\rangle.
+]
+
+This belongs to the established class of continuous norm-preserving stochastic Schrödinger evolutions that unravel Lindblad master equations and can localize trajectories toward preferred eigenspaces. (arXiv)
+
+The new ingredient is not the stochastic-calculus machinery itself. It is the identification
+
+[
+\boxed{
+\text{collapse strength}
+
+\text{representation-curvature exposure}
+\times
+\text{pointer amplification}.
+}
+]
+
+Proposition 1: Norm preservation
+
+For every trajectory,
+
+[
+\langle\Psi_t|\Psi_t\rangle=1.
+]
+
+Proof
+
+Set
+
+[
+B_r=A_r-\langle A_r\rangle_t.
+]
+
+Itô’s rule gives
+
+[
+d\langle\Psi|\Psi\rangle
+
+\left\langle
+K+K^\dagger+\sum_rB_r^2
+\right\rangle dt
++
+2\sum_r\langle B_r\rangle dW_r,
+]
+
+where
+
+[
+K=-iH-\frac12\sum_rB_r^2.
+]
+
+Since
+
+[
+K+K^\dagger+\sum_rB_r^2=0
+]
+
+and
+
+[
+\langle B_r\rangle=0,
+]
+
+we obtain
+
+[
+d\langle\Psi|\Psi\rangle=0.
+]
+
+⸻
+
+5. The Born-rule theorem
+
+Define the instantaneous branch weight
+
+[
+p_i(t)
+
+\langle\Psi_t|Q_i|\Psi_t\rangle.
+]
+
+Assume that during the locking interval
+
+[
+[H_t,Q_i]=0
+]
+
+and
+
+[
+[A_r,Q_i]=0.
+]
+
+Because
+
+[
+A_rQ_i=a_{ri}Q_i,
+]
+
+Itô calculus gives
+
+[
+\boxed{
+dp_i
+
+2p_i
+\sum_r
+\left(
+a_{ri}-\bar a_r
+\right)dW_r,
+}
+]
+
+where
+
+[
+\bar a_r
+
+\sum_jp_j a_{rj}.
+]
+
+There is no (dt) drift term.
+
+Therefore every (p_i(t)) is a bounded martingale:
+
+[
+\mathbb E[p_i(t)]=p_i(0).
+]
+
+Localization condition
+
+Assume persistent branch distinguishability:
+
+[
+\int_0^\infty
+\min_{i\neq j}
+\sum_r
+\left(
+a_{ri}(t)-a_{rj}(t)
+\right)^2
+dt
+
+\infty.
+]
+
+Then two branches with different pointer signatures cannot both retain nonzero asymptotic weight. The stochastic quadratic variation separating them grows without bound.
+
+Consequently,
+
+[
+p_i(\infty)\in{0,1}
+]
+
+almost surely and
+
+[
+\sum_i p_i(\infty)=1.
+]
+
+Exactly one branch survives.
+
+Theorem 1: Dynamical Born rule
+
+Under the preceding assumptions,
+
+[
+\boxed{
+\Pr(\text{final outcome}=i)=p_i(0).
+}
+]
+
+Proof
+
+Since (p_i(t)) is a bounded martingale,
+
+[
+\mathbb E[p_i(\infty)]
+
+\mathbb E[p_i(0)]
+
+p_i(0).
+]
+
+But the final value is an indicator variable:
+
+[
+p_i(\infty)
+
+\begin{cases}
+1,&\text{if outcome }i\text{ is selected},\
+0,&\text{otherwise}.
+\end{cases}
+]
+
+Therefore,
+
+[
+\mathbb E[p_i(\infty)]
+
+\Pr(\text{outcome }i),
+]
+
+and hence
+
+[
+\Pr(i)=p_i(0).
+]
+
+This is the gambler’s-ruin or fair-martingale mechanism behind the Born probabilities, now embedded in a full Hilbert-space trajectory dynamics.
+
+⸻
+
+6. General POVMs and mixed states
+
+Let a general quantum measurement have Kraus operators (K_i) satisfying
+
+[
+\sum_iK_i^\dagger K_i=I.
+]
+
+Introduce an apparatus basis ({|i\rangle_A}) and the isometry
+
+[
+V|\psi\rangle
+
+\sum_i
+K_i|\psi\rangle\otimes|i\rangle_A.
+]
+
+Define
+
+[
+Q_i
+
+I_S\otimes|i\rangle\langle i|_A.
+]
+
+Then
+
+[
+\begin{aligned}
+p_i(0)
+&=
+\langle\psi|
+V^\dagger Q_iV
+|\psi\rangle
+\
+&=
+\langle\psi|
+K_i^\dagger K_i
+|\psi\rangle.
+\end{aligned}
+]
+
+Writing
+
+[
+E_i=K_i^\dagger K_i,
+]
+
+we obtain
+
+[
+\boxed{
+\Pr(i)
+
+\langle\psi|E_i|\psi\rangle.
+}
+]
+
+For a mixed state (\rho),
+
+[
+\boxed{
+\Pr(i)
+
+\operatorname{Tr}(\rho E_i).
+}
+]
+
+This covers projective measurements, weak measurements, noisy measurements, and all finite-dimensional POVMs.
+
+Gleason’s theorem establishes the uniqueness of the trace rule for normalized, additive, noncontextual measures on projectors in Hilbert spaces of dimension at least three. Generalized Gleason results extend the conclusion to POVMs and include two-dimensional qubit systems. (MathWeb)
+
+HCARL adds something those probability theorems do not provide by themselves: an explicit trajectory that ends in one branch with the uniquely permitted probabilities.
+
+⸻
+
+7. Why the exponent must be two
+
+Suppose one attempted to replace the Born rule by
+
+[
+P_i
+\propto
+|c_i|^q
+]
+
+for some (q\neq2).
+
+Such a rule generally fails to remain additive under arbitrary orthogonal refinements and fails to define one implementation-independent probability measure over all effects.
+
+The Hilbert norm is preserved by reversible dynamics:
+
+[
+|U\psi|^2=|\psi|^2.
+]
+
+The martingale branch quantity is therefore
+
+[
+p_i=|Q_i\Psi|^2,
+]
+
+not
+
+[
+|Q_i\Psi|^q.
+]
+
+The combination of:
+
+[
+\text{unitary invariance},
+]
+
+[
+\text{additivity over exclusive branches},
+]
+
+[
+\text{normalization},
+]
+
+and
+
+[
+\text{implementation noncontextuality}
+]
+
+selects the quadratic trace measure.
+
+The stochastic locking dynamics then turns that measure into actual outcome frequencies.
+
+⸻
+
+8. Single outcomes and repeatability
+
+The theory takes an individual trajectory
+
+[
+|\Psi_t(\omega)\rangle
+]
+
+as physically real.
+
+The density matrix is an ensemble description:
+
+[
+\rho_t
+
+\mathbb E
+\left[
+|\Psi_t\rangle\langle\Psi_t|
+\right].
+]
+
+When outcome (k) has been selected,
+
+[
+Q_k|\Psi\rangle=|\Psi\rangle.
+]
+
+Then
+
+[
+A_r|\Psi\rangle
+
+a_{rk}|\Psi\rangle
+]
+
+and
+
+[
+\left(
+A_r-\langle A_r\rangle
+\right)|\Psi\rangle=0.
+]
+
+The stochastic localization terms vanish. The selected branch is therefore absorbing and repeatable:
+
+[
+\Pr(k\text{ again}\mid k)=1.
+]
+
+The outcome is not inserted by an independent projection postulate. It is the limiting state of the trajectory equation.
+
+⸻
+
+9. Ensemble dynamics and consistency
+
+Averaging over the stochastic trajectories gives
+
+[
+\boxed{
+\frac{d\rho}{dt}
+
+-i[H,\rho]
+
+\frac12
+\sum_r
+[A_r,[A_r,\rho]].
+}
+]
+
+This is a linear Lindblad-form master equation.
+
+Linearity at the ensemble level is essential. Nonlinear ensemble evolution can allow different decompositions of the same density matrix to evolve differently and can create signaling problems. Collapse-model work therefore imposes a linear master equation even though individual trajectories are nonlinear and stochastic. (arXiv)
+
+For local locking operators and a bipartite state (\rho_{AB}), a local trace-preserving ensemble map on (A) does not change the unconditional reduced state on (B):
+
+[
+\rho_B’
+
+\operatorname{Tr}A
+\left[
+(\mathcal E_A\otimes I_B)(\rho{AB})
+\right]
+
+\rho_B.
+]
+
+Thus the model does not permit controllable faster-than-light signaling at the ensemble level, provided its fundamental locking operators satisfy the required locality conditions.
+
+⸻
+
+10. Energy condition
+
+The locking contribution changes the mean energy according to
+
+[
+\frac{d}{dt}\operatorname{Tr}(\rho H)
+
+-\frac12
+\sum_r
+\operatorname{Tr}
+\left(
+\rho[A_r,[A_r,H]]
+\right).
+]
+
+Therefore exact energy conservation holds when
+
+[
+[A_r,H]=0.
+]
+
+More generally, any energy transferred during locking must be accounted for by the apparatus and law register.
+
+This is a load-bearing physical condition. Arbitrary choices of locking operators would produce unacceptable heating or energy drift.
+
+⸻
+
+11. Recovery and the quantum–classical boundary
+
+When law space is flat,
+
+[
+c_r=0,
+]
+
+so
+
+[
+A_r=0.
+]
+
+The fundamental equation reduces to ordinary reversible quantum dynamics:
+
+[
+d|\Psi_t\rangle=-iH_t|\Psi_t\rangle dt.
+]
+
+Thus:
+
+[
+\boxed{
+\text{flat law transport}
+\Longrightarrow
+\text{fully reversible quantum evolution}.
+}
+]
+
+When curvature and pointer amplification are present,
+
+[
+c_r>0,
+\qquad
+N_{\mathrm{eff}}\gg1,
+]
+
+the branch-separation rate becomes macroscopic:
+
+[
+\Gamma_{\mathrm{eff}}
+\sim
+\lambda
+\sum_{r=1}^{N_{\mathrm{eff}}}c_r.
+]
+
+The quantum–classical transition is therefore controlled not merely by size, but by
+
+[
+\boxed{
+\text{representation curvature}
+\times
+\text{record amplification}
+\times
+\text{interaction duration}.
+}
+]
+
+A large but geometrically flat system need not collapse rapidly. A smaller system subjected to strongly curved, amplified measurement dynamics can lock much faster.
+
+⸻
+
+12. Experimentally distinguishable prediction
+
+Because the Born rule remains exact, the new signal is not an anomalous outcome frequency. It is irreversible curvature-dependent coherence loss after an otherwise exact reversal.
+
+For branch projectors (Q_i,Q_j), the ensemble equation gives
+
+[
+Q_i\rho(T)Q_j
+
+e^{-D_{ij}}
+Q_i\rho_{\mathrm{unitary}}(T)Q_j,
+]
+
+where
+
+[
+\boxed{
+D_{ij}
+
+\frac12
+\int_0^T
+\sum_r
+\left(
+a_{ri}(t)-a_{rj}(t)
+\right)^2dt.
+}
+]
+
+Using the curvature coupling,
+
+[
+D_{ij}
+
+\frac{\lambda}{2}
+\int_0^T
+\sum_r
+c_r(t)
+\left(
+\alpha_{ri}-\alpha_{rj}
+\right)^2dt.
+]
+
+For a two-branch interferometer,
+
+[
+\boxed{
+\frac{V_{\mathrm{HCARL}}}{V_{\mathrm{QM}}}
+
+e^{-D_{01}}.
+}
+]
+
+Curved-loop reversal experiment
+
+Prepare
+
+[
+|+\rangle
+
+\frac{|0\rangle+|1\rangle}{\sqrt2}.
+]
+
+Apply two controlled representation laws (G_1,G_2) in the order
+
+[
+G_1G_2G_1^\dagger G_2^\dagger.
+]
+
+Their holonomy is
+
+[
+\Omega
+
+G_1G_2G_1^\dagger G_2^\dagger.
+]
+
+Then apply a calibrated final operation (\Omega^\dagger), so the total standard unitary is exactly
+
+[
+\Omega^\dagger\Omega=I.
+]
+
+In ideal ordinary quantum mechanics, perfect control predicts complete recovery:
+
+[
+V_{\mathrm{QM}}=1.
+]
+
+HCARL predicts that the path through noncommuting law space leaves an irreversible trace even though the final unitary is the identity:
+
+[
+\boxed{
+V_{\mathrm{HCARL}}
+
+\exp
+\left[
+-\frac{\lambda}{2}
+\int_0^T
+N_{\mathrm{eff}}(t)c_\Omega(t)
+(\Delta\alpha)^2dt
+\right].
+}
+]
+
+A flat identity protocol with the same duration, gate count, pulse power, and environmental exposure should not contain the curvature-dependent term.
+
+Weak-measurement and partial-collapse reversal have already been experimentally demonstrated, including reversal in entangled optical systems, so reversal-based tests are technologically meaningful rather than purely conceptual. (arXiv)
+
+⸻
+
+13. Atomic-holonomy prediction
+
+For an atomic (3)-cycle on (n) representational states,
+
+[
+c_{\mathrm{atomic}}=\frac3n.
+]
+
+For (N) equivalent atomic-holonomy cells acting for duration (T), with pointer-signature gap (\Delta\alpha),
+
+[
+D
+
+\frac{3\lambda NT}{2n}
+(\Delta\alpha)^2.
+]
+
+Therefore,
+
+[
+\boxed{
+V
+
+\exp
+\left[
+-\frac{3\lambda NT}{2n}
+(\Delta\alpha)^2
+\right].
+}
+]
+
+This directly connects the extremal atomic-holonomy problem to an experimentally measurable visibility law.
+
+The mathematical extremal function (H(n)) controls how many pairwise atomically curved measurement laws can coexist. The physical theory predicts how a realized collection of those laws contributes to representation locking.
+
+⸻
+
+14. Measurement-reversal ceiling
+
+For the recovered qubit state,
+
+[
+\rho_{\mathrm{rec}}
+
+\frac12
+\begin{pmatrix}
+1&e^{-D}\
+e^{-D}&1
+\end{pmatrix}.
+]
+
+Its fidelity with the original state (|+\rangle) is
+
+[
+F_{\mathrm{rec}}
+
+\langle+|\rho_{\mathrm{rec}}|+\rangle
+
+\frac{1+e^{-D}}{2}.
+]
+
+Hence
+
+[
+\boxed{
+1-F_{\mathrm{rec}}
+
+\frac{1-e^{-D}}2
+
+\frac D2+O(D^2).
+}
+]
+
+Ordinary ideal unitary quantum mechanics permits
+
+[
+F_{\mathrm{rec}}=1.
+]
+
+HCARL predicts a nonzero recovery floor proportional to curvature exposure:
+
+[
+1-F_{\mathrm{rec}}
+\approx
+\frac{\lambda}{4}
+\int
+\sum_r
+c_r(t)
+(\Delta\alpha_r)^2dt.
+]
+
+This is the cleanest falsification target.
+
+⸻
+
+15. What has been solved inside the model
+
+The construction supplies:
+
+[
+\boxed{\text{A full system–apparatus–environment–law Hilbert space}}
+]
+
+[
+\boxed{\text{Unitary premeasurement}}
+]
+
+[
+\boxed{\text{An explicit single-outcome trajectory dynamics}}
+]
+
+[
+\boxed{\text{Norm preservation}}
+]
+
+[
+\boxed{\text{Born probabilities from a bounded-martingale theorem}}
+]
+
+[
+\boxed{\text{General POVM measurements}}
+]
+
+[
+\boxed{\text{Repeatable pointer outcomes}}
+]
+
+[
+\boxed{\text{A linear completely positive ensemble evolution}}
+]
+
+[
+\boxed{\text{A flat-law recovery limit}}
+]
+
+[
+\boxed{\text{An experimentally distinguishable visibility law}}
+]
+
+The conceptual answer is:
+
+[
+\boxed{
+\text{Measurement is curvature-activated representation locking.}
+}
+]
+
+Collapse is not an unexplained discontinuous command imposed on the wavefunction. It is stochastic localization generated when incompatible reversible laws create holonomy and a macroscopic apparatus amplifies that curvature into a stable record.
+
+⸻
+
+16. Scientific status
+
+This closes the stated mathematical gaps within the proposed nonrelativistic model. It does not establish that HCARL is the law of nature.
+
+Three major tasks remain:
+
+1. Derive the operators (A_r) and the rate (\lambda) from a deeper microscopic field theory rather than stipulating them phenomenologically.
+2. Construct a Lorentz-covariant or relativistically causal version. Relativistic collapse theories face genuine difficulties involving locality, energy production, and field-theoretic consistency. (arXiv)
+3. Perform the curved-loop reversal experiment and either measure or bound
+
+[
+\lambda.
+]
+
+A null result would not leave the proposal untouched. It would impose
+
+[
+\lambda
+<
+\frac{-2\ln V_{\min}}
+{\displaystyle
+\int
+N_{\mathrm{eff}}c_\Omega
+(\Delta\alpha)^2dt
+},
+]
+
+or rule out the model over the tested parameter range.
+
+The honest conclusion is therefore:
+
+[
+\boxed{
+\text{HCARL is a complete falsifiable candidate solution,
+not yet a demonstrated solution of nature’s measurement problem.}
+}
+]
