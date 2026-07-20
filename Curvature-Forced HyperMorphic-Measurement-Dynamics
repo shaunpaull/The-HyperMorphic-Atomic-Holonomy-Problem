@@ -1,0 +1,1281 @@
+Curvature-Forced HyperMorphic Measurement Dynamics
+
+Deriving representation locking from law-space geometry
+
+Abstract
+
+We derive a candidate quantum measurement dynamics from four ingredients:
+
+1. a Hilbert bundle over a manifold of computational or representational laws;
+2. a unitary connection describing reversible law transport;
+3. a physical law field coupled locally and gauge-covariantly to the bundle curvature;
+4. a nondemolition output record carried by that field.
+
+Under locality, analyticity, gauge covariance, exact decoupling in the flat-law limit, and a weak Markovian law-field limit, the leading system–field interaction is forced to be linear in the curvature operator. Tracing over the field produces a completely positive curvature-dephasing equation. Conditioning on its commuting output record produces the nonlinear norm-preserving HyperMorphic locking equation.
+
+The collapse operators, collapse rate, and Wiener increments are therefore not inserted independently:
+
+[
+\boxed{
+A_\alpha
+
+\sum_r
+\Gamma_{\alpha r}^{1/2}
+,i\rho_*(F_{\mu\nu})\Sigma_r^{\mu\nu},
+}
+]
+
+[
+\boxed{
+\Gamma_{rs}
+
+g_rg_s
+\int_{-\infty}^{\infty}
+\langle B_r(t)B_s(0)\rangle,dt,
+}
+]
+
+and
+
+[
+\boxed{
+dW_\alpha
+
+dY_\alpha
+
+2\langle A_\alpha\rangle_tdt.
+}
+]
+
+The Born rule follows because the branch weights are bounded martingales and curvature distinguishability drives almost-sure localization.
+
+The derivation is conditional on the physical existence of the law field and its actual commuting output record. It is not yet evidence that nature contains such a field.
+
+⸻
+
+1. The law manifold
+
+Let (M) be a smooth manifold whose point (q\in M) specifies the active representational law.
+
+Over (M), introduce a Hermitian vector bundle
+
+[
+\pi:E\longrightarrow M
+]
+
+with fibre
+
+[
+E_q\simeq\mathcal H,
+]
+
+the Hilbert space of the system, apparatus, and active law register.
+
+A choice of local frame gives a unitary connection
+
+[
+\nabla_\mu
+
+\partial_\mu+\mathcal A_\mu(q),
+]
+
+where
+
+[
+\mathcal A_\mu^\dagger=-\mathcal A_\mu.
+]
+
+Its curvature is
+
+[
+\mathcal F_{\mu\nu}
+
+\partial_\mu\mathcal A_\nu
+
+\partial_\nu\mathcal A_\mu
++
+[\mathcal A_\mu,\mathcal A_\nu].
+]
+
+Quantum geometric phases and non-Abelian holonomies already admit precisely this fibre-bundle interpretation: the geometric gauge potential is a connection and closed transport produces a holonomy. (arXiv)
+
+For a small oriented law-space surface (\Sigma),
+
+[
+U_{\partial\Sigma}
+
+I+
+\mathcal F_{\mu\nu}\Sigma^{\mu\nu}
++
+O(|\Sigma|^{3/2}).
+]
+
+Thus curvature measures the lowest-order failure of reversible law transports to commute.
+
+⸻
+
+2. The physical curvature observable
+
+Let
+
+[
+\rho_*:\mathfrak g\rightarrow\mathfrak u(\mathcal H)
+]
+
+be the infinitesimal unitary representation of the law symmetry group.
+
+Since
+
+[
+\rho_*(\mathcal F_{\mu\nu})^\dagger
+
+-\rho_*(\mathcal F_{\mu\nu}),
+]
+
+the operator
+
+[
+K_\Sigma(q)
+
+i\rho_*(\mathcal F_{\mu\nu}(q))
+\Sigma^{\mu\nu}
+]
+
+is Hermitian.
+
+We remove its physically irrelevant identity component:
+
+[
+\widetilde K_\Sigma
+
+K_\Sigma
+
+\frac{\operatorname{Tr}K_\Sigma}{d}I.
+]
+
+Under a gauge transformation (V(q)),
+
+[
+\mathcal F_{\mu\nu}
+\mapsto
+V\mathcal F_{\mu\nu}V^\dagger,
+]
+
+and therefore
+
+[
+\widetilde K_\Sigma
+\mapsto
+V\widetilde K_\Sigma V^\dagger.
+]
+
+Its spectrum and all quantities such as
+
+[
+\operatorname{Tr}
+\big(
+[\widetilde K_\Sigma,\rho]^\dagger
+[\widetilde K_\Sigma,\rho]
+\big)
+]
+
+are gauge invariant.
+
+⸻
+
+3. Curvature-forced coupling theorem
+
+Assumptions
+
+Suppose the interaction between matter and the law field is described by local Hermitian operators
+
+[
+L_r[\mathcal A,\Sigma_r].
+]
+
+Require:
+
+A1. Locality
+
+At (q), (L_r) depends only on the connection and finitely many derivatives at (q).
+
+A2. Gauge covariance
+
+[
+L_r[\mathcal A^V,\Sigma_r]
+
+V L_r[\mathcal A,\Sigma_r]V^\dagger.
+]
+
+A3. Analyticity
+
+Near a flat connection, (L_r) has a convergent or formal expansion in curvature and its covariant derivatives.
+
+A4. Flat-law recovery
+
+When
+
+[
+\mathcal F_{\mu\nu}=0,
+]
+
+the measurement coupling vanishes modulo an irrelevant identity term:
+
+[
+L_r=c_rI.
+]
+
+A5. Lowest-derivative dynamics
+
+At leading order, no covariant derivatives of curvature are used.
+
+A6. Surface orientation
+
+The law protocol supplies an oriented bivector
+
+[
+\Sigma_r^{\mu\nu}
+]
+
+with which the curvature can be contracted.
+
+Theorem 1: Leading curvature form
+
+Under A1–A6, the traceless leading term of the interaction is
+
+[
+\boxed{
+L_r
+
+g_r,
+i\rho_*(\mathcal F_{\mu\nu})
+\Sigma_r^{\mu\nu}
++
+O(\mathcal F^2).
+}
+]
+
+Proof
+
+Analyticity and flat-law recovery imply that the traceless expansion begins at first order:
+
+[
+L_r
+
+T_r^{\mu\nu}
+\big(
+\rho_*(\mathcal F_{\mu\nu})
+\big)
++
+O(\mathcal F^2).
+]
+
+Local gauge covariance requires the linear term to transform by conjugation. With no additional local geometric tensor available at this order, its law-space indices must be contracted with the protocol bivector:
+
+[
+T_r^{\mu\nu}
+\propto
+\Sigma_r^{\mu\nu}.
+]
+
+Because (\rho_*(\mathcal F_{\mu\nu})) is anti-Hermitian while (L_r) is Hermitian, multiplication by (i) is required. Therefore
+
+[
+L_r
+
+g_r i\rho_*(\mathcal F_{\mu\nu})
+\Sigma_r^{\mu\nu}
++
+O(\mathcal F^2).
+]
+
+This proves the claim.
+
+Meaning of the theorem
+
+The theorem does not say every conceivable theory must use this interaction.
+
+It says that within the stated class—
+
+[
+\text{local}
++
+\text{gauge covariant}
++
+\text{analytic}
++
+\text{flat-decoupling}
++
+\text{lowest derivative},
+]
+
+—the leading nontrivial measurement operator cannot be an arbitrary preferred observable. It must be a contraction of law-space curvature.
+
+Its sign reverses when the loop orientation reverses:
+
+[
+L_r(-\Sigma)=-L_r(\Sigma),
+]
+
+while the induced decoherence is quadratic and therefore orientation independent:
+
+[
+\mathcal D[-L_r]=\mathcal D[L_r].
+]
+
+⸻
+
+4. Microscopic law-field model
+
+Introduce a bosonic law field with Hilbert space
+
+[
+\mathcal F_B
+]
+
+and bath operators (B_r).
+
+The complete Hamiltonian is
+
+[
+H_{\mathrm{tot}}
+
+H_{\mathrm{SAL}}
++
+H_B
++
+\epsilon
+\sum_r
+\widetilde K_r\otimes B_r,
+]
+
+where
+
+[
+\widetilde K_r
+
+i\rho_*(\mathcal F_{\mu\nu})
+\Sigma_r^{\mu\nu}
+
+\frac{\operatorname{Tr}
+\left[
+i\rho_*(\mathcal F_{\mu\nu})
+\Sigma_r^{\mu\nu}
+\right]}{d}I.
+]
+
+The total system evolves unitarily:
+
+[
+\rho_{\mathrm{tot}}(t)
+
+e^{-iH_{\mathrm{tot}}t}
+\rho_{\mathrm{tot}}(0)
+e^{iH_{\mathrm{tot}}t}.
+]
+
+Hence no stochastic term has yet been introduced.
+
+Weak-coupling master equations are obtained microscopically from Hamiltonians of the form
+
+[
+H_S+H_B+\epsilon\sum_r K_r\otimes B_r,
+]
+
+with the dissipative coefficients determined by bath correlation functions. Rigorous weak-coupling limits can produce positivity-preserving GKLS dynamics. (arXiv)
+
+⸻
+
+5. Deriving the locking rate
+
+Assume the bath is stationary:
+
+[
+[\rho_B,H_B]=0.
+]
+
+Define its correlation matrix
+
+[
+C_{rs}(t)
+
+\operatorname{Tr}_B
+\left[
+B_r(t)B_s(0)\rho_B
+\right].
+]
+
+For nondemolition measurement operators satisfying
+
+[
+[H_{\mathrm{SAL}},\widetilde K_r]=0,
+]
+
+only the zero-Bohr-frequency sector contributes.
+
+The rate matrix is
+
+[
+\boxed{
+\Gamma_{rs}
+
+\epsilon^2
+\int_{-\infty}^{\infty}
+C_{rs}(t),dt.
+}
+]
+
+More generally, the rate at Bohr frequency (\omega) is determined by the Fourier transform
+
+[
+\Gamma_{rs}(\omega)
+
+\epsilon^2
+\int_{-\infty}^{\infty}
+e^{i\omega t}
+C_{rs}(t),dt.
+]
+
+The correlation matrix is positive in the physical weak-coupling limit. Diagonalize it:
+
+[
+\Gamma
+
+V^\dagger
+\operatorname{diag}
+(\gamma_1,\ldots,\gamma_R)
+V,
+\qquad
+\gamma_\alpha\ge0.
+]
+
+The resulting collapse or monitoring operators are
+
+[
+\boxed{
+A_\alpha
+
+\sqrt{\gamma_\alpha}
+\sum_rV_{\alpha r}\widetilde K_r.
+}
+]
+
+Thus the earlier phenomenological quantity (\lambda) is replaced by microscopic data:
+
+[
+\boxed{
+\lambda
+;\longrightarrow;
+\epsilon^2
+\times
+\text{law-field spectral density}.
+}
+]
+
+The strength is no longer independently chosen after the interaction and field state have been specified.
+
+⸻
+
+6. Derived ensemble equation
+
+Tracing over the law field in the Markov weak-coupling limit gives
+
+[
+\boxed{
+\frac{d\rho}{dt}
+
+-i[H_{\mathrm{eff}},\rho]
++
+\sum_\alpha
+\left(
+A_\alpha\rho A_\alpha
+
+\frac12
+{A_\alpha^2,\rho}
+\right).
+}
+]
+
+Since (A_\alpha) is Hermitian,
+
+[
+\boxed{
+\frac{d\rho}{dt}
+
+-i[H_{\mathrm{eff}},\rho]
+
+\frac12
+\sum_\alpha
+[A_\alpha,[A_\alpha,\rho]].
+}
+]
+
+This is completely positive and trace preserving.
+
+When law space is flat,
+
+[
+\mathcal F_{\mu\nu}=0,
+]
+
+so
+
+[
+A_\alpha=0
+]
+
+and the evolution reduces exactly to
+
+[
+\dot\rho=-i[H_{\mathrm{eff}},\rho].
+]
+
+Therefore:
+
+[
+\boxed{
+\text{flat law geometry}
+\Longrightarrow
+\text{ordinary reversible quantum mechanics}.
+}
+]
+
+⸻
+
+7. Deriving the stochastic noise
+
+The unitary system–field evolution may be written in Hudson–Parthasarathy form:
+
+[
+\boxed{
+\begin{aligned}
+dU_t
+={}&
+\Bigg[
+\sum_\alpha
+A_\alpha,dB_\alpha^\dagger
+
+A_\alpha,dB_\alpha
+\
+&\quad
+-\frac12
+\sum_\alpha A_\alpha^2dt
+-iH_{\mathrm{eff}}dt
+\Bigg]U_t.
+\end{aligned}
+}
+]
+
+Here (dB_\alpha) and (dB_\alpha^\dagger) are quantum field increments.
+
+The evolution remains unitary on
+
+[
+\mathcal H\otimes\mathcal F_B.
+]
+
+Hudson–Parthasarathy unitary evolution can be converted into nonlinear stochastic state diffusion, with Brownian motion emerging through the Fock-space/Wiener-space representation and an associated change of probability measure. (arXiv)
+
+Define an output quadrature
+
+[
+dY_\alpha(t)
+
+dB_{\alpha,\mathrm{out}}(t)
++
+dB_{\alpha,\mathrm{out}}^\dagger(t).
+]
+
+Its conditional mean is
+
+[
+\mathbb E
+[
+dY_\alpha(t)
+\mid\mathcal Y_t
+]
+
+2\langle A_\alpha\rangle_tdt,
+]
+
+where (\mathcal Y_t) is the output record up to time (t).
+
+Define the innovation process
+
+[
+\boxed{
+dW_\alpha(t)
+
+dY_\alpha(t)
+
+2\langle A_\alpha\rangle_tdt.
+}
+]
+
+Then
+
+[
+\mathbb E[dW_\alpha\mid\mathcal Y_t]=0
+]
+
+and
+
+[
+dW_\alpha dW_\beta
+
+\delta_{\alpha\beta}dt.
+]
+
+Therefore (W_\alpha) is a Wiener process relative to the observed filtration.
+
+The noise has not been appended to the Schrödinger equation. It is the unpredictable component of the physical law-field output after subtracting the state-dependent conditional mean.
+
+Quantum nonlinear filtering provides precisely this route from nondemolition quantum outputs to stochastic conditional states. (arXiv)
+
+⸻
+
+8. The derived HyperMorphic trajectory equation
+
+For a pure conditional state,
+
+[
+\rho_t^c
+
+|\Psi_t\rangle\langle\Psi_t|,
+]
+
+the filtering equation becomes
+
+[
+\boxed{
+\begin{aligned}
+d|\Psi_t\rangle
+={}&
+\Bigg[
+-iH_{\mathrm{eff}}dt
+-\frac12
+\sum_\alpha
+\left(
+A_\alpha-\langle A_\alpha\rangle_t
+\right)^2dt
+\
+&\qquad
++
+\sum_\alpha
+\left(
+A_\alpha-\langle A_\alpha\rangle_t
+\right)dW_\alpha
+\Bigg]
+|\Psi_t\rangle.
+\end{aligned}
+}
+]
+
+Substituting the curvature-derived operators gives
+
+[
+\boxed{
+A_\alpha
+
+\sqrt{\gamma_\alpha}
+\sum_rV_{\alpha r}
+\left[
+i\rho_*(\mathcal F_{\mu\nu})
+\Sigma_r^{\mu\nu}
+
+\frac{\operatorname{Tr}
+\left(
+i\rho_*(\mathcal F_{\mu\nu})
+\Sigma_r^{\mu\nu}
+\right)}{d}I
+\right].
+}
+]
+
+This is the desired derivation of the earlier HCARL equation.
+
+The three quantities previously inserted phenomenologically now have explicit origins:
+
+[
+\boxed{
+A_\alpha
+\leftarrow
+\text{law-space curvature},
+}
+]
+
+[
+\boxed{
+\gamma_\alpha
+\leftarrow
+\text{law-field correlation spectrum},
+}
+]
+
+[
+\boxed{
+dW_\alpha
+\leftarrow
+\text{law-output innovations}.
+}
+]
+
+⸻
+
+9. Pointer basis from curvature
+
+Assume the active curvature operators commute during the amplification interval:
+
+[
+[A_\alpha,A_\beta]=0.
+]
+
+They therefore possess joint spectral projectors (Q_i):
+
+[
+A_\alpha
+
+\sum_i a_{\alpha i}Q_i.
+]
+
+The pointer basis is not separately selected. It is the joint eigenbasis of the curvature couplings.
+
+Thus:
+
+[
+\boxed{
+\text{pointer sectors}
+
+\text{curvature eigensectors}.
+}
+]
+
+The apparatus must satisfy the nondemolition condition
+
+[
+[H_{\mathrm{eff}},Q_i]=0
+]
+
+during record formation.
+
+The branch signatures must be distinct:
+
+[
+\sum_\alpha
+(a_{\alpha i}-a_{\alpha j})^2
+
+0
+\qquad
+(i\neq j).
+]
+
+⸻
+
+10. Born rule from the derived dynamics
+
+Define
+
+[
+p_i(t)
+
+\langle\Psi_t|Q_i|\Psi_t\rangle.
+]
+
+Applying Itô calculus gives
+
+[
+\boxed{
+dp_i
+
+2p_i
+\sum_\alpha
+\left(
+a_{\alpha i}
+
+\bar a_\alpha
+\right)dW_\alpha,
+}
+]
+
+where
+
+[
+\bar a_\alpha
+
+\sum_jp_j a_{\alpha j}.
+]
+
+There is no drift term, so
+
+[
+\mathbb E[p_i(t)]
+
+p_i(0).
+]
+
+Each (p_i) is a bounded martingale and therefore converges almost surely.
+
+Assume persistent distinguishability:
+
+[
+\int_0^\infty
+\min_{i\neq j}
+\sum_\alpha
+\left(
+a_{\alpha i}(t)-a_{\alpha j}(t)
+\right)^2dt
+
+\infty.
+]
+
+If two distinct branches retained nonzero limiting weight, their continually accumulated distinguishability would give unbounded quadratic variation, contradicting convergence of the bounded branch-weight martingales.
+
+Hence
+
+[
+p_i(\infty)\in{0,1}
+]
+
+almost surely, with exactly one final value equal to one.
+
+Because
+
+[
+\mathbb E[p_i(\infty)]
+
+p_i(0),
+]
+
+we obtain
+
+[
+\boxed{
+\Pr(\text{outcome }i)=p_i(0).
+}
+]
+
+For a projective measurement,
+
+[
+p_i(0)
+
+\langle\psi|\Pi_i|\psi\rangle.
+]
+
+For a POVM with effect (E_i),
+
+[
+p_i(0)
+
+\operatorname{Tr}(\rho E_i).
+]
+
+Therefore
+
+[
+\boxed{
+\Pr(i)
+
+\operatorname{Tr}(\rho E_i).
+}
+]
+
+The Born rule follows from:
+
+[
+\text{unitary microscopic dilation}
++
+\text{nondemolition filtering}
++
+\text{fair martingale weights}
++
+\text{curvature distinguishability}.
+]
+
+⸻
+
+11. The exact role of atomic holonomy
+
+For a finite law system represented by permutations, let
+
+[
+\Omega
+
+\sigma\tau\sigma^{-1}\tau^{-1}.
+]
+
+For a (3)-cycle acting on (n) states,
+
+[
+\operatorname{Tr}\Omega=n-3.
+]
+
+Define normalized curvature exposure
+
+[
+c(\Omega)
+
+1-\frac1n
+\operatorname{Re}\operatorname{Tr}\Omega.
+]
+
+Then an atomic holonomy has
+
+[
+\boxed{
+c_{\mathrm{atomic}}=\frac3n.
+}
+]
+
+For small curvature, the continuum and discrete quantities correspond schematically through
+
+[
+I-\Omega
+\approx
+-\mathcal F_{\mu\nu}\Sigma^{\mu\nu}.
+]
+
+The dephasing between branches (i) and (j) is
+
+[
+D_{ij}
+
+\frac12
+\int_0^T
+\sum_\alpha
+(a_{\alpha i}-a_{\alpha j})^2dt.
+]
+
+For (N) identical atomic cells,
+
+[
+D_{ij}
+\propto
+\frac{3N}{n}
+,\gamma T
+(\Delta\alpha_{ij})^2.
+]
+
+The mathematical atomic-holonomy problem therefore constrains how densely minimally curved measurement laws can coexist, while the physical model assigns a localization rate to those laws.
+
+⸻
+
+12. A sharper experimental signature
+
+Consider a small law-space loop of signed area (s).
+
+At leading order,
+
+[
+A(s)=sA^{(1)}+O(s^2).
+]
+
+The coherent holonomy is orientation sensitive:
+
+[
+U_{\mathrm{hol}}(-s)
+
+U_{\mathrm{hol}}(s)^{-1}.
+]
+
+However, the curvature-locking exponent is
+
+[
+D(s)
+
+\frac12
+\int
+(\Delta a(s))^2dt
+
+\kappa s^2+O(s^3),
+]
+
+so
+
+[
+\boxed{
+D(-s)=D(s)+O(s^3).
+}
+]
+
+After exact coherent reversal, the visibility is
+
+[
+V(s)=V_0e^{-D(s)}.
+]
+
+The proposed small-loop law is therefore
+
+[
+\boxed{
+-\ln\frac{V(s)}{V_0}
+
+\kappa s^2+O(s^3).
+}
+]
+
+It predicts:
+
+[
+D(+s)=D(-s),
+]
+
+and
+
+[
+D(2s)=4D(s)
+]
+
+in the weak-curvature regime.
+
+A strong experiment would compare:
+
+1. a flat identity protocol;
+2. a clockwise curved loop;
+3. the corresponding counterclockwise loop;
+4. a loop with twice the enclosed area.
+
+The protocols should be matched for:
+
+[
+\text{duration},
+\quad
+\text{pulse power},
+\quad
+\text{gate number},
+\quad
+\text{dynamical phase},
+\quad
+\text{ordinary noise filter function}.
+]
+
+After applying the exact inverse holonomy, ordinary ideal unitary quantum mechanics predicts full recovery in the absence of conventional decoherence.
+
+The HyperMorphic model predicts a residual orientation-even, area-squared visibility deficit:
+
+[
+\boxed{
+1-\frac{V(s)}{V_0}
+\approx
+\kappa s^2.
+}
+]
+
+Objective-collapse proposals are already subject to increasingly sensitive interferometric, mechanical, heating, and spontaneous-radiation tests, so the model would enter an experimentally constrained field rather than an evidence-free space. (arXiv)
+
+⸻
+
+13. What was genuinely derived
+
+Within the assumptions, we derived:
+
+[
+\boxed{
+\text{the form of the locking operator from curvature},
+}
+]
+
+[
+\boxed{
+\text{the locking rate from the field correlation spectrum},
+}
+]
+
+[
+\boxed{
+\text{the stochastic noise from output innovations},
+}
+]
+
+[
+\boxed{
+\text{the pointer basis from curvature eigensectors},
+}
+]
+
+[
+\boxed{
+\text{the Born rule from martingale localization},
+}
+]
+
+[
+\boxed{
+\text{an exact flat-law quantum limit},
+}
+]
+
+and
+
+[
+\boxed{
+\text{an orientation-even area-squared reversal signature}.
+}
+]
+
+This is materially stronger than writing down a stochastic collapse equation and subsequently declaring that its operators represent HyperMorphic curvature.
+
+⸻
+
+14. The irreducible ontology issue
+
+A crucial distinction remains.
+
+A stochastic Schrödinger equation obtained by conditioning on a monitored environment can be interpreted merely as an observer’s evolving information. If the global system and field are treated only as one unitary wavefunction, then the derivation alone does not force one outcome to become uniquely real.
+
+To make the theory a genuine single-outcome solution, one must assert that the commuting law-output process
+
+[
+Y_\alpha(t)
+]
+
+is an actual physical record—a beable—rather than only a possible observation.
+
+The nondemolition conditions are
+
+[
+[Y_\alpha(s),Y_\beta(t)]=0
+]
+
+and
+
+[
+[Y_\alpha(s),X(t)]=0
+\qquad
+(s\le t)
+]
+
+for future conditioned system observables (X(t)).
+
+Because the output algebra is commutative, it admits an ordinary classical probability representation. Belavkin’s measurement framework uses such nondemolition output algebras to formulate quantum filtering and dynamical state reduction. (arXiv)
+
+HCARL must therefore add one explicit ontological statement:
+
+[
+\boxed{
+\text{Exactly one law-field output history is physically actual.}
+}
+]
+
+This is not a second collapse law. It identifies which part of the unitary dilation constitutes the classical record.
+
+Without this statement, the construction is an open-system quantum-trajectory model.
+
+With it, the construction is a single-outcome theory.
+
+⸻
+
+15. Final theorem
+
+HyperMorphic Measurement Derivation Theorem
+
+Let (E\to M) be a finite-dimensional Hermitian bundle with unitary connection (\nabla) and curvature (\mathcal F). Suppose:
+
+1. matter couples locally, analytically, and gauge-covariantly to a stationary law field;
+2. the coupling vanishes for flat law transport;
+3. the leading interaction contains no covariant derivatives of curvature;
+4. the law field admits a Markov weak-coupling limit;
+5. the curvature observables commute during amplification;
+6. their joint eigensectors are persistently distinguishable;
+7. the commuting law-output history is physically actual.
+
+Then, to leading curvature order:
+
+[
+A_\alpha
+
+\sqrt{\gamma_\alpha}
+\sum_r
+V_{\alpha r}
+i\rho_*(\mathcal F_{\mu\nu})
+\Sigma_r^{\mu\nu},
+]
+
+with (\gamma_\alpha) determined by the law-field correlation spectrum.
+
+The conditional state obeys
+
+[
+\begin{aligned}
+d|\Psi_t\rangle
+={}&
+\left[
+-iH_{\mathrm{eff}}
+-\frac12
+\sum_\alpha
+(A_\alpha-\langle A_\alpha\rangle)^2
+\right]
+|\Psi_t\rangle dt
+\
+&+
+\sum_\alpha
+(A_\alpha-\langle A_\alpha\rangle)
+|\Psi_t\rangle dW_\alpha.
+\end{aligned}
+]
+
+The evolution:
+
+* preserves norm;
+* has a completely positive ensemble average;
+* reduces exactly to unitary quantum mechanics for (\mathcal F=0);
+* localizes almost surely into one joint curvature eigensector;
+* assigns that sector the probability
+
+[
+\Pr(i)=\operatorname{Tr}(\rho E_i).
+]
+
+Therefore, under these assumptions,
+
+[
+\boxed{
+\text{quantum measurement is the actualization of one
+curvature-distinguished law-field record.}
+}
+]
+
+⸻
+
+16. Scientific verdict
+
+This derivation closes the earlier objection:
+
+“Why should HyperMorphic curvature produce that particular stochastic equation?”
+
+The answer is now:
+
+[
+\boxed{
+\text{because curvature is the leading local gauge-covariant
+flat-vanishing operator,}
+}
+]
+
+[
+\boxed{
+\text{its coupling to a fluctuating law field yields a GKLS generator,}
+}
+]
+
+and
+
+[
+\boxed{
+\text{conditioning on the field’s nondemolition output yields
+the locking trajectory.}
+}
+]
+
+What remains unproved is whether the required law field exists, what its action is, and whether its output history is fundamentally actual.
+
+Accordingly, the model is now best described as:
+
+[
+\boxed{
+\text{a derived and falsifiable candidate solution
+to the nonrelativistic measurement problem,}
+}
+]
+
+not an experimentally established solution.
